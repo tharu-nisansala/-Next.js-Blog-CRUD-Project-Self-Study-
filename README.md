@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧩 Next.js Blog CRUD Project (Self-Study)
 
-## Getting Started
+This is a self-study project built using **Next.js**, **MongoDB**, and **NextAuth**.  
+It demonstrates how to build a simple blog dashboard where users can create, view, and delete posts.  
+Update functionality and further improvements are in progress.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🌓 **Dark/Light Mode Toggle**
+- 🧠 **User Authentication** (NextAuth)
+- ✍️ **Create, Read, Delete** Blog Posts
+- 🗂️ **MongoDB + Mongoose** for data persistence
+- 🖼️ Dynamic Image Rendering using `next/image`
+- 🎨 Responsive design with CSS Modules
+- ⚡ Data Fetching using SWR
+- 🔐 Secure API Routes with Next.js 16 Route Handlers
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠️ Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js 16**
+- **React.js**
+- **MongoDB & Mongoose**
+- **NextAuth.js**
+- **CSS Modules**
+- **SWR (for data fetching)**
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ⚙️ Setup Instructions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/tharu-nisansala/-Next.js-Blog-CRUD-Project-Self-Study.git
+   cd Next.js-Blog-CRUD-Project-Self-Study
+   
+2. **Install dependencies**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```bash
+    
+    npm install
+    ```
 
-## Deploy on Vercel
+3. **Set up environment variables**
+Create a .env.local file and add:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    env
+    ````
+    MONGO_URI=your_mongodb_connection_string
+    NEXTAUTH_URL=http://localhost:3000
+    NEXTAUTH_SECRET=your_secret_key
+    ````
+4. **Run the development server**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    ```bash
+    npm run dev
+    ```
+
+5. Open in browser:
+   
+    👉 http://localhost:3000
+
+---
+
+🧑‍💻 Author
+**Tharushi Nisansala Jayarathna**
+(Information & Communication Technology Undergraduate (Software Technology))
