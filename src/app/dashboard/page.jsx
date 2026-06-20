@@ -52,12 +52,12 @@ export default function Dashboard() {
       });
 
       if (res.ok) {
-        alert("✅ Post created successfully!");
+        alert(" Post created successfully!");
         e.target.reset();
         mutate(); // 🔁 Refresh post list after new post
       } else {
         const errorData = await res.json();
-        alert("❌ Failed to create post: " + errorData.message);
+        alert(" Failed to create post: " + errorData.message);
       }
     } catch (error) {
       console.error("Error creating post:", error);
@@ -74,7 +74,7 @@ export default function Dashboard() {
 
       if (res.ok) {
         alert("🗑️ Post deleted successfully!");
-        mutate(); // ✅ Re-fetch updated list after deletion
+        mutate(); //  Re-fetch updated list after deletion
       } else {
         alert(data.message);
       }

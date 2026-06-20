@@ -31,7 +31,7 @@ export default async function blog() {
         <div className={styles.content}>
             <h1 className={styles.title}>{item.title}</h1>
             <p className={styles.desc}>{item.desc}</p>
-        </div>
+        </div> 
         </Link>
          ))}
     </div>

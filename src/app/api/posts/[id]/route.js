@@ -8,7 +8,7 @@ export const GET = async (request, context) => {
   try {
     await connectMongo();
 
-    // ✅ unwrap params safely
+    // unwrap params safely
     const { id } = await context.params;
 
     if (!id) {
@@ -36,7 +36,7 @@ export const DELETE = async (request, context) => {
   try {
     await connectMongo();
 
-    // ✅ unwrap params safely
+    // unwrap params safely
     const { id } = await context.params;
 
     if (!mongoose.Types.ObjectId.isValid(id)) {

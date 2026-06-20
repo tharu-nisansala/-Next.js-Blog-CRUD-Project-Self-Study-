@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import styles from "./page.module.css";
 
-// ✅ Fetch single post data by ID
+// Fetch single post data by ID
 async function getData(id) {
   try {
     const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
@@ -21,9 +21,9 @@ async function getData(id) {
   
 }
 
-// ✅ Dynamic Metadata
+// Dynamic Metadata
 export async function generateMetadata({ params }) {
-  const { id } = await params; // ✅ Must await in Next.js 15+
+  const { id } = await params; // Must await in Next.js 15+
   const post = await getData(id);
 
   if (!post) {
@@ -38,9 +38,9 @@ export async function generateMetadata({ params }) {
     description: post.desc,
   };
 }
-// ✅ Main Component
+// Main Component
 export default async function Post({ params }) {
-  const { id } = await params; // 🔥 `params` is a Promise in Next.js 15/16
+  const { id } = await params; // `params` is a Promise in Next.js 15/16
   const data = await getData(id);
 
   if (!data) {
